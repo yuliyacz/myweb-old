@@ -16,6 +16,9 @@ angular.module('myweb', ['ngRoute', 'ui.router'])
     .run(function ($state) {
         $state.go('home');
     })
-    .controller('mainCtrl', ['$scope', function ($scope) {
+    .controller('mainCtrl', ['$scope', '$state', function ($scope, $state) {
         $scope.test = 'Test angular';
+        $scope.goToAbout = function () {
+            $state.go('about');
+        };
 }]);

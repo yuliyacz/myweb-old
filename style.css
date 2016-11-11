@@ -7,7 +7,8 @@
 }
 #home > div:first-child {
     /*todo change color*/
-    background-color: #e53755;
+    background-color: #ebfff4;
+    background-image: url("https://www.transparenttextures.com/patterns/retro-intro.png");
     order: 1;
 }
 #home article:first-child > div {
@@ -35,7 +36,7 @@
 #home > div:last-child > div button:hover {
     background: black;
 }
-#home > div:last-child > div button a, #home > div:last-child > div button a:hover:focus:active {
+#home > div:last-child > div button, #home > div:last-child > div button:hover:focus:active {
     color: white;
     text-decoration: none;
 }
@@ -51,19 +52,52 @@
 #home > div:first-child > article:last-child a span {
     color: white;
 }
+#home > div:first-child > article:first-child div h3 {
+    font-style: oblique;
+    font-weight: 600;
+}
 #bachelor {
+    background:
+            linear-gradient(
+                    rgba(0, 0, 0, 0.6),
+                    rgba(0, 0, 0, 0.6)
+            ),
+            url("vegan-rest.png");
+    background-size: 100% 100%;
     width: 250px;
+    height: 180px;
+}
+#bachelor:hover {
     background: url("vegan-rest.png");
     background-size: 100% 100%;
+    width: 250px;
     height: 180px;
-    border: 1px solid #3a3a3a;
 }
 #crabgame {
+    background:
+            linear-gradient(
+                    rgba(0, 0, 0, 0.6),
+                    rgba(0, 0, 0, 0.6)
+            ),
+            url("crab-game.png");
+    background-size: 100% 100%;
     width: 250px;
+    height: 180px;
+}
+#crabgame:hover {
     background: url("crab-game.png");
     background-size: 100% 100%;
+    width: 250px;
     height: 180px;
-    border: 1px solid #3a3a3a;
+}
+#bachelor:hover p, #crabgame:hover p {
+    visibility: hidden;
+}
+#bachelor p, #crabgame p {
+    color: white;
+    padding-top: 60px !important;
+    font-weight: 600;
+    font-size: larger;
 }
 @media screen and (min-width: 901px) {
     #home {
