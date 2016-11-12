@@ -1,127 +1,58 @@
-#home {
-    display: flex;
-    justify-content: center;
+body {
+    background-color: #f5f5f5;
+    width: 100vw;
 }
-#home > div {
-    width: 50%;
-}
-#home > div:first-child {
-    /*todo change color*/
-    background-color: #ebfff4;
-    background-image: url("https://www.transparenttextures.com/patterns/retro-intro.png");
-    order: 1;
-}
-#home article:first-child > div {
-    padding-top: 20%;
-}
-#home > div:last-child {
-    /*todo change photo*/
-    background: url("me.jpg") no-repeat center;
-}
-#home > div:last-child > div {
-    width: 100%;
-    height: 100%;
-    /*todo change style*/
-    background-color: rgba(255, 255, 255, 0.18);
-    color: white;
-}
-#home > div:last-child > div > * {
-    padding-top: 50%;
-}
-#home > div:last-child > div button {
+.navbar.navbar-default {
     border-radius: 0;
-    border: 1px solid white;
-    background: none;
+    border: none;
+    background-color: white;
 }
-#home > div:last-child > div button:hover {
-    background: black;
+.navbar-right {
+    margin-right: 30px;
 }
-#home > div:last-child > div button, #home > div:last-child > div button:hover:focus:active {
+.navbar-right li {
+    padding: 6px;
+}
+.navbar-right li a * {
     color: white;
-    text-decoration: none;
 }
-#home > div > * {
-    text-align: center;
-    margin: auto;
+#head {
+    height: 70px;
+    background-color: #aab5f1;
+    font-size: xx-large;
+    padding-top: 12px;
 }
-#home > div:first-child > article:last-child {
+#head p {
     position: absolute;
-    width: 50%;
-    bottom: 0;
+    left: 50%;
 }
-#home > div:first-child > article:last-child a span {
-    color: white;
+#myPhoto {
+    position: absolute;
+    width: 200px;
+    height: 143px;
+    right: 60%;
+    top: -35px;
+    border-radius: 50px;
+    z-index: 10;
+    /*box-shadow: 1px 1px 10px 5px #f5f5f5;*/
+    border: 2px solid #f5f5f5;
 }
-#home > div:first-child > article:first-child div h3 {
-    font-style: oblique;
-    font-weight: 600;
+#canvas {
+    margin: auto;
+    background-color: #6e8af5;
+    width: 60%;
+    height: 200px;
+    min-width: 650px;
 }
-#bachelor {
-    background:
-            linear-gradient(
-                    rgba(0, 0, 0, 0.6),
-                    rgba(0, 0, 0, 0.6)
-            ),
-            url("vegan-rest.png");
-    background-size: 100% 100%;
-    width: 250px;
-    height: 180px;
+@media screen and (min-width: 769px) {
+
 }
-#bachelor:hover {
-    background: url("vegan-rest.png");
-    background-size: 100% 100%;
-    width: 250px;
-    height: 180px;
-}
-#crabgame {
-    background:
-            linear-gradient(
-                    rgba(0, 0, 0, 0.6),
-                    rgba(0, 0, 0, 0.6)
-            ),
-            url("crab-game.png");
-    background-size: 100% 100%;
-    width: 250px;
-    height: 180px;
-}
-#crabgame:hover {
-    background: url("crab-game.png");
-    background-size: 100% 100%;
-    width: 250px;
-    height: 180px;
-}
-#bachelor:hover p, #crabgame:hover p {
-    visibility: hidden;
-}
-#bachelor p, #crabgame p {
-    color: white;
-    padding-top: 60px !important;
-    font-weight: 600;
-    font-size: larger;
-}
-@media screen and (min-width: 901px) {
-    #home {
-        flex-direction: row;
-        height: 100vh;
-    }
-    #home > div:first-child > article:first-child #projects {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-}
-@media screen and (max-width: 900px) {
-    #home {
-        flex-direction: column;
-    }
-    #home div:first-child {
-        background-color: antiquewhite;
+@media screen and (max-width: 768px) {
+    .nav.navbar-nav {
         width: 100%;
-        order: 1;
     }
-    #home div:last-child {
-        background-color: #c3b4fa;
-        width: 100%;
+    #canvas {
+        width: 90%;
+        min-width: 300px;
     }
 }

@@ -5,7 +5,7 @@
     <title>Yuliya Ovchinnikova</title>
 
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/css/bootstrap.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.0.0/bootstrap-social.css" />
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
@@ -13,11 +13,50 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 
 </head>
 <body data-ng-controller="mainCtrl">
-    <main ui-view> </main>
+    <header>
+        <div id="head">
+            <p>Yuliya Ovchinnikova</p>
+        </div>
+        <nav class="navbar navbar-default" role="navigation">
+            <ul class="nav navbar-nav">
+                <li><a ui-sref="home">Home</a></li>
+                <li><a ui-sref="about">About</a></li>
+            </ul>
+            <img id="myPhoto" src="meSmall.jpg" alt="My photo">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="https://www.facebook.com/yuliya.ovch" class="btn btn-social-icon btn-facebook">
+                        <span class="fa fa-facebook"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/yuliya-ovchinnikova-136a22b5" class="btn btn-social-icon btn-linkedin">
+                        <span class="fa fa-linkedin"></span>
+                    </a>
+                </li>
+                <!--li>
+                    <a href="https://github.com/juliecz/" class="btn btn-social-icon btn-github">
+                        <span class="fa fa-github"></span>
+                    </a>
+                </li-->
+                <li>
+                    <a href="https://bitbucket.org/juliecz/" class="btn btn-social-icon btn-bitbucket">
+                        <span class="fa fa-bitbucket"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://vk.com/yul_ov" class="btn btn-social-icon btn-vk">
+                        <span class="fa fa-vk"></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main ui-view="oneSide"> </main>
 </body>
 </html>
