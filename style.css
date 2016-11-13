@@ -18,19 +18,20 @@ body {
 }
 #head {
     height: 70px;
-    background-color: #aab5f1;
+    background-color: #ffd084;
     font-size: xx-large;
     padding-top: 12px;
 }
 #head p {
     position: absolute;
     left: 50%;
+    color: white!important;
 }
 #myPhoto {
     position: absolute;
     width: 200px;
     height: 143px;
-    right: 60%;
+    right: 55%;
     top: -35px;
     border-radius: 50px;
     z-index: 10;
@@ -38,11 +39,35 @@ body {
     border: 2px solid #f5f5f5;
 }
 #canvas {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 70px;
     margin: auto;
-    background-color: #6e8af5;
+    /*background-color: #ffffff;*/
     width: 60%;
-    height: 200px;
     min-width: 650px;
+}
+#canvas > div {
+    border: 5px solid white;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
+}
+.imgproject {
+    width: 300px;
+    height: 190px;
+}
+#veganrest .imgproject {
+    background: url("vegan-rest.png") no-repeat;
+    background-size: 100% 100%;
+}
+#crabgame .imgproject {
+    background: url("crab-game.png") no-repeat;
+    background-size: 100% 100%;
 }
 @media screen and (min-width: 769px) {
 
@@ -51,8 +76,53 @@ body {
     .nav.navbar-nav {
         width: 100%;
     }
+    #head p {
+        left: unset;
+        position: unset;
+        text-align: center;
+    }
+    #myPhoto {
+        visibility: hidden;
+    }
+    header .navbar-default {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-around !important;
+    }
+    header .navbar-default ul li {
+        display: inline-block;
+    }
     #canvas {
-        width: 90%;
+        width: 80%;
         min-width: 300px;
+        flex-direction: column;
+    }
+    #canvas #crabgame {
+        margin-top: 20px;
+    }
+    #crabgame .imgproject, #veganrest .imgproject {
+        width: 500px;
+        height: 300px;
+        margin: auto;
+    }
+    .imgproject {
+        background-size: 100% 100%;
+    }
+}
+@media screen and (max-width: 405px) {
+    header .navbar-default {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    header .navbar-default ul {
+        margin: auto !important;
+    }
+    header .navbar-default ul:first-child {
+        border-bottom: 3px solid #ffd084;
+    }
+    header .navbar-default ul li {
+        margin: auto !important;
     }
 }

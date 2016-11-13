@@ -33,7 +33,7 @@ angular.module('myweb', ['ngRoute', 'ui.router'])
     })
     .controller('mainCtrl', ['$scope', '$state', function ($scope, $state) {
         $scope.$on('$viewContentLoaded', function() {
-            var canvas = document.getElementById('canvas')[0].getContext('2d');//angular.element(document.querySelector('#canvas'));
+            //var canvas = document.getElementById('canvas')[0].getContext('2d');//angular.element(document.querySelector('#canvas'));
             /*if(canvas!==null) {
                 var context = canvas[0].getContext('2d');
                 console.log(canvas);
