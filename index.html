@@ -18,7 +18,7 @@
 
 </head>
 <body data-ng-controller="mainCtrl">
-    <header>
+    <!--header>
         <div id="head">
             <p>Yuliya Ovchinnikova</p>
         </div>
@@ -43,7 +43,7 @@
                     <a href="https://github.com/juliecz/" class="btn btn-social-icon btn-github">
                         <span class="fa fa-github"></span>
                     </a>
-                </li-->
+                </li->
                 <li>
                     <a href="https://bitbucket.org/juliecz/" class="btn btn-social-icon btn-bitbucket">
                         <span class="fa fa-bitbucket"></span>
@@ -56,7 +56,56 @@
                 </li>
             </ul>
         </nav>
+    </header-->
+    <header>
+        <nav class="navbar navbar-default" role="navigation">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a ui-sref="home">Home</a></li>
+                <li><a ui-sref="about">About</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-me">
+            <div>
+                <h2>Yuliya</h2>
+                <h2>Ovchinnikova</h2>
+            </div>
+            <div>
+                <img id="myPhoto" alt="">
+            </div>
+        </div>
     </header>
     <main ui-view="oneSide"> </main>
+    <footer>
+        <div>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/yuliya.ovch" class="btn btn-social-icon btn-facebook">
+                        <span class="fa fa-facebook"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/yuliya-ovchinnikova-136a22b5" class="btn btn-social-icon btn-linkedin">
+                        <span class="fa fa-linkedin"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/juliecz/" class="btn btn-social-icon btn-github">
+                        <span class="fa fa-github"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://bitbucket.org/juliecz/" class="btn btn-social-icon btn-bitbucket">
+                        <span class="fa fa-bitbucket"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://vk.com/yul_ov" class="btn btn-social-icon btn-vk">
+                        <span class="fa fa-vk"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

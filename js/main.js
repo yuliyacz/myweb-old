@@ -42,6 +42,10 @@ angular.module('myweb', ['ngRoute', 'ui.router'])
                 console.log('canvas is  null');
             }*/
         });
+        $scope.myhref = function (link) {
+            //location.href = link;
+            window.open(link, '_blank');
+        };
         //var context = canvas.getContext('2d');
 
         $scope.test = 'Test angular';

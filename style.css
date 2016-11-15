@@ -1,20 +1,136 @@
 body {
     background-color: #f5f5f5;
-    width: 100vw;
+}
+header {
+    background-color: #d4d4d4;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
 }
 .navbar.navbar-default {
     border-radius: 0;
     border: none;
-    background-color: white;
+    background-color: transparent;
+}
+header > .header-me {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
 }
 .navbar-right {
+    display: inline-block;
+    margin-left: 170px;
+}
+header > nav {
+    margin-right: 100px;
+}
+.header-me {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.header-me * {
+    text-align: center;
+}
+.header-me > div:last-child {
+}
+#myPhoto {
+    width: 590px;
+    /*todo remove height*/
+    height: 200px;
+    padding: 10px;
+}
+#canvas {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+    margin: auto;
+    width: 60%;
+    min-width: 650px;
+}
+#canvas > div {
+    border: 5px solid white;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
+}
+.imgproject {
+    width: 280px;
+    height: 170px;
+}
+#veganrest .imgproject {
+    /*background: url("vegan-rest.png") no-repeat;*/
+    background-color: #d4d4d4;
+    background-size: 100% 100%;
+}
+#crabgame .imgproject {
+    /*background: url("crab-game.png") no-repeat;*/
+    background-color: #d4d4d4;
+    background-size: 100% 100%;
+}
+footer {
+    height: 100px;
+    background-color: #d4d4d4;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+footer ul li {
+    display: inline;
+}
+@media screen and (max-width: 768px) {
+    body {
+    }
+    header > .header-me {
+        order: -1;
+        flex-direction: column;
+    }
+    #myPhoto {
+        width: 95%;
+    }
+    header > nav {
+        margin: auto;
+    }
+    ul.navbar-right {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: row;
+        margin: 0 0 10px 0;
+    }
+    #canvas {
+        flex-direction: column;
+        width: 90%;
+        min-width: 300px;
+    }
+    #canvas > div {
+        margin: auto;
+    }
+}
+
+/*.navbar-right {
     margin-right: 30px;
+    background-color: #dcdcdc;
 }
 .navbar-right li {
     padding: 6px;
 }
+.navbar-right li a {
+    background-color: white;
+    border: 2px solid #ffd084;
+    border-radius: 0;
+}
 .navbar-right li a * {
-    color: white;
+    color: #ffd084;
 }
 #head {
     height: 70px;
@@ -35,7 +151,7 @@ body {
     top: -35px;
     border-radius: 50px;
     z-index: 10;
-    /*box-shadow: 1px 1px 10px 5px #f5f5f5;*/
+    /*box-shadow: 1px 1px 10px 5px #f5f5f5;*
     border: 2px solid #f5f5f5;
 }
 #canvas {
@@ -45,7 +161,7 @@ body {
     justify-content: space-around;
     padding-top: 70px;
     margin: auto;
-    /*background-color: #ffffff;*/
+    /*background-color: #ffffff;*
     width: 60%;
     min-width: 650px;
 }
@@ -126,3 +242,4 @@ body {
         margin: auto !important;
     }
 }
+*/
