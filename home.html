@@ -1,43 +1,17 @@
 <section id="home">
     <div>
-        <article>
-            <div>
-                <h3>My projects</h3>
-                <div id="projects">
-                    <a href="http://vegan-restaurant.herokuapp.com/">
-                        <div id="bachelor" ng-href="http://vegan-restaurant.herokuapp.com/"> <p>Bachelor thesis</p> </div>
-                    </a>
-                    <a href="http://yuliya.cz/crabgame/">
-                        <div id="crabgame"> <p>PixiJS <br> Crab game </p> </div>
-                    </a>
+        <div id="canvas">
+            <div id="veganrest">
+                <div class="imgproject" ng-click="myhref('http://vegan-restaurant.herokuapp.com/')"></div>
+                <div class="textproject">
+                    Vegan restaurant
                 </div>
             </div>
-        </article>
-        <article>
-            <div>
-                <a href="https://www.facebook.com/yuliya.ovch" class="btn btn-social-icon btn-facebook">
-                    <span class="fa fa-facebook"></span>
-                </a>
-                <a href="https://www.linkedin.com/in/yuliya-ovchinnikova-136a22b5" class="btn btn-social-icon btn-linkedin">
-                    <span class="fa fa-linkedin"></span>
-                </a>
-                <!--a href="https://github.com/juliecz/" class="btn btn-social-icon btn-github">
-                    <span class="fa fa-github"></span>
-                </a-->
-                <a href="https://bitbucket.org/juliecz/" class="btn btn-social-icon btn-bitbucket">
-                    <span class="fa fa-bitbucket"></span>
-                </a>
-                <a href="https://vk.com/yul_ov" class="btn btn-social-icon btn-vk">
-                    <span class="fa fa-vk"></span>
-                </a>
-            </div>
-        </article>
-    </div>
-    <div>
-        <div>
-            <div id="vertical">
-                <h1 >Yuliya Ovchinnikova</h1>
-                <button class="btn btn-default btn-lg" ng-click="goToAbout()"> About me  </button>
+            <div id="crabgame">
+                <div class="imgproject" ng-click="myhref('http://yuliya.cz/crabgame/')"></div>
+                <div class="textproject">
+                    Crab game
+                </div>
             </div>
         </div>
     </div>

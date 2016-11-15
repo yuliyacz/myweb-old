@@ -7,25 +7,11 @@ angular.module('myweb', ['ngRoute', 'ui.router'])
         $stateProvider
             .state('home', {
                 url: '/',
-                views: {
-                    'twoSides': {
-                        templateUrl: 'home.html'
-                    },
-                    'oneSide': {
-                        templateUrl: 'homeOne.html'
-                    }
-                }
+                templateUrl: 'home.html'
             })
             .state('about', {
                 url: '/about',
-                views: {
-                    'twoSides': {
-                        templateUrl: 'about.html'
-                    },
-                    'oneSide': {
-                        templateUrl: 'about.html'
-                    }
-                }
+                templateUrl: 'about.html'
             });
     })
     .run(function ($state) {
