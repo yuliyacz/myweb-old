@@ -1,8 +1,27 @@
 body {
-    background-color: #f5f5f5;
+    background: rgba(245, 242, 227, 0.41);
+}
+footer {
+    background-color: #453b35;
+    box-shadow: 1px 1px 5px 3px #453b35;
+    font-family: Lobster;
 }
 header {
-    background-color: #d4d4d4;
+    background-image: url("photos/light_noise_68.png");
+    font-family: Lobster;
+    box-shadow: 0px 0px 10px 1px rgba(69, 59, 53, 0.61);
+    /*border: 50px solid transparent;
+    -webkit-border-image: url("photos/curve.png") 50 stretch;
+    -o-border-image: url("photos/curve.png") 60 stretch;
+    border-image: url("photos/curve.png") 50 stretch;
+    border-bottom: 2px solid green;*/
+}
+.header-me * {
+    text-align: center;
+    color: #453b35;
+    font-style: oblique;
+}
+header {
     display: flex;
     display: -webkit-flex;
     flex-direction: column;
@@ -12,34 +31,38 @@ header {
     border: none;
     background-color: transparent;
 }
-header > .header-me {
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: row;
-}
 .navbar-right {
     display: inline-block;
     margin-left: 170px;
+    font-size: 17px;
 }
 header > nav {
     margin-right: 100px;
 }
 .header-me {
+    padding-top: 13px;
     display: flex;
     display: -webkit-flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.header-me * {
-    text-align: center;
+#name {
+    font-size: 50px !important;
+    display: table;
+    height: 190px;
 }
-.header-me > div:last-child {
+#name > p {
+    display: table-cell;
+    vertical-align: middle;
 }
 #myPhoto {
-    width: 590px;
+    width: 290px;
     /*todo remove height*/
-    height: 200px;
-    padding: 10px;
+    margin-top: -50px;
+    margin-bottom: 17px;
+    border-radius: 300px;
+    border: 3px solid #453b35;
+    box-shadow: 1px 1px 20px 1px rgba(255, 236, 247, 0.47);
 }
 #canvas {
     display: flex;
@@ -58,23 +81,27 @@ header > nav {
     flex-direction: column;
     background-color: white;
     text-align: center;
+    box-shadow: 1px 1px 1px 1px rgba(69, 59, 53, 0.45);
 }
 .imgproject {
     width: 280px;
     height: 170px;
 }
+#canvas > div {
+    width: 300px;
+}
+#canvas > div > div {
+    margin: 0 auto;
+}
 #veganrest .imgproject {
-    /*background: url("vegan-rest.png") no-repeat;*/
-    background-color: #d4d4d4;
+    background: url("vegan-rest.png") no-repeat;
     background-size: 100% 100%;
 }
 #crabgame .imgproject {
-    /*background: url("crab-game.png") no-repeat;*/
-    background-color: #d4d4d4;
+    background: url("crab-game.png") no-repeat;
     background-size: 100% 100%;
 }
 footer {
-    background-color: #d4d4d4;
     display: flex;
     display: -webkit-flex;
     justify-content: center;
@@ -86,11 +113,12 @@ footer ul {
 }
 footer ul li {
     display: inline;
+    padding: 10px;
 }
 footer > div > ul > li > a {
     border-radius: 0 !important;
-    background-color: gray !important;
-    border: none !important;
+    border: 1px solid #f5f2e3 !important;
+    background-color: #453b35 !important;
 }
 #about {
     display: flex;
@@ -99,19 +127,29 @@ footer > div > ul > li > a {
     justify-content: space-around;
 }
 @media screen and (max-width: 768px) {
-    body {
-    }
     header > .header-me {
         flex-direction: column;
     }
-    header > nav {
+    .header-me > div:first-child {
         order: 1;
     }
     #myPhoto {
         width: 95%;
+        max-width: 400px;
+        margin-bottom: unset;
+        margin-top: unset;
+
+    }
+    #name {
+        height: 100px;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        font-size: 30px !important;
     }
     header > nav {
         margin: auto;
+        order: 2;
     }
     ul.navbar-right {
         display: flex;
@@ -127,131 +165,13 @@ footer > div > ul > li > a {
     #canvas > div {
         margin: auto;
     }
-}
-
-/*.navbar-right {
-    margin-right: 30px;
-    background-color: #dcdcdc;
-}
-.navbar-right li {
-    padding: 6px;
-}
-.navbar-right li a {
-    background-color: white;
-    border: 2px solid #ffd084;
-    border-radius: 0;
-}
-.navbar-right li a * {
-    color: #ffd084;
-}
-#head {
-    height: 70px;
-    background-color: #ffd084;
-    font-size: xx-large;
-    padding-top: 12px;
-}
-#head p {
-    position: absolute;
-    left: 50%;
-    color: white!important;
-}
-#myPhoto {
-    position: absolute;
-    width: 200px;
-    height: 143px;
-    right: 55%;
-    top: -35px;
-    border-radius: 50px;
-    z-index: 10;
-    /*box-shadow: 1px 1px 10px 5px #f5f5f5;*
-    border: 2px solid #f5f5f5;
-}
-#canvas {
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 70px;
-    margin: auto;
-    /*background-color: #ffffff;*
-    width: 60%;
-    min-width: 650px;
-}
-#canvas > div {
-    border: 5px solid white;
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: column;
-    background-color: white;
-    text-align: center;
-}
-.imgproject {
-    width: 300px;
-    height: 190px;
-}
-#veganrest .imgproject {
-    background: url("vegan-rest.png") no-repeat;
-    background-size: 100% 100%;
-}
-#crabgame .imgproject {
-    background: url("crab-game.png") no-repeat;
-    background-size: 100% 100%;
-}
-@media screen and (min-width: 769px) {
-
-}
-@media screen and (max-width: 768px) {
-    .nav.navbar-nav {
-        width: 100%;
-    }
-    #head p {
-        left: unset;
-        position: unset;
-        text-align: center;
-    }
-    #myPhoto {
-        visibility: hidden;
-    }
-    header .navbar-default {
-        display: flex;
-        display: -webkit-flex;
-        justify-content: space-around !important;
-    }
-    header .navbar-default ul li {
-        display: inline-block;
-    }
-    #canvas {
-        width: 80%;
-        min-width: 300px;
+    #about {
         flex-direction: column;
-    }
-    #canvas #crabgame {
-        margin-top: 20px;
-    }
-    #crabgame .imgproject, #veganrest .imgproject {
-        width: 500px;
-        height: 300px;
+        width: 90%;
+        max-width: 400px;
         margin: auto;
     }
-    .imgproject {
-        background-size: 100% 100%;
+    .navbar-right {
+        font-size: 20px;
     }
 }
-@media screen and (max-width: 405px) {
-    header .navbar-default {
-        display: flex;
-        display: -webkit-flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    header .navbar-default ul {
-        margin: auto !important;
-    }
-    header .navbar-default ul:first-child {
-        border-bottom: 3px solid #ffd084;
-    }
-    header .navbar-default ul li {
-        margin: auto !important;
-    }
-}
-*/
