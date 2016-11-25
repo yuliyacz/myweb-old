@@ -17,7 +17,7 @@ angular.module('myweb', ['ngRoute', 'ui.router'])
     .run(function ($state) {
         $state.go('home');
     })
-    .controller('mainCtrl', ['$scope', '$state', function ($scope, $state) {
+    .controller('mainCtrl', ['$scope', '$state', '$location', function ($scope, $state, $location) {
         $scope.$on('$viewContentLoaded', function() {
             //var canvas = document.getElementById('canvas')[0].getContext('2d');//angular.element(document.querySelector('#canvas'));
             /*if(canvas!==null) {
@@ -33,8 +33,32 @@ angular.module('myweb', ['ngRoute', 'ui.router'])
             window.open(link, '_blank');
         };
         //var context = canvas.getContext('2d');
-
+        $scope.skills = [ {
+                name: 'Programování',
+                text: 'HTML, CSS, Javascript, AngularJS, NodeJS, Bootstrap, základy jQuery, C#, PixiJS, základy GIT'
+            }, {
+                name: 'Operační systémy',
+                text: 'Windows, Linux'
+            }, {
+                name: 'Databáze',
+                text: 'MSSQL, MongoDB'
+            }, {
+                name: 'Ostatní',
+                text: 'Adobe Photoshop CS, UML'
+            }
+        ];
+        $scope.language = [ {
+                name: 'Ruština',
+                text: 'rodilý mluvčí'
+            }, {
+                name: 'Čeština',
+                text: 'výborně slovem i písmem'
+            }, {
+                name: 'Angličtina',
+                text: 'pasivně'
+        }];
         $scope.test = 'Test angular';
+        $scope.skills2 = ['HTML', 'CSS', 'Javascript', 'Node.js', 'Bootstrap', 'základy jQuery', 'C#', 'základy PixiJS', 'základy GIT', 'MS Windows', 'Linux', 'MSSQL', 'MongoDB'];
+    }]);
 
-}]);
 

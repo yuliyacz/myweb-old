@@ -1,73 +1,57 @@
 <section id="about">
-    <div id="osobni">
-        <table class="table">
-            <tr>
-                <td colspan="2"><h4><b>Osobní údaje</b></h4></td>
-            </tr>
-            <tr>
-                <td>Jméno a příjmeni</td>
-                <td>Bc. Yuliya Ovchinnikova</td>
-            </tr>
-            <tr>
-                <td>Město</td>
-                <td>Praha</td>
-            </tr>
-            <tr>
-                <td>Telefonní číslo</td>
-                <td>+420773943165</td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td>yuliya@yuliya.cz</td>
-            </tr>
-            <tr>
-                <td>Web</td>
-                <td>yuliya.cz</td>
-            </tr>
-        </table>
-    </div>
     <div id="znalosti">
-        <table class="table">
-            <tr>
-                <td colspan="2"><h4><b>Znalosti a dovednosti</b></h4></td>
-            </tr>
-            <tr>
-                <td colspan="2"><b>Technické znalosti</b></td>
-            </tr>
-            <tr>
-                <td>Programování</td>
-                <td>HTML, CSS, Javascript, AngularJS, NodeJS,<br> základy jQuery, C#, PixiJS, základy GIT</td>
-            </tr>
-            <tr>
-                <td>Operační systémy</td>
-                <td>Windows, Linux</td>
-            </tr>
-            <tr>
-                <td>Databáze</td>
-                <td>MSSQL, MongoDB</td>
-            </tr>
-            <tr>
-                <td>Ostatní</td>
-                <td>Adobe Photoshop CS, UML</td>
-            </tr>
-            <tr>
-                <td><b>Znalost cizích jazyků</b></td>
-            </tr>
-            <tr>
-                <td>Ruština</td>
-                <td>rodilý mluvčí</td>
-            </tr>
-            <tr>
-                <td>Čečtina</td>
-                <td>výborně slovem i písmem</td>
-            </tr>
-            <tr>
-                <td>Angličtina</td>
-                <td>pasivně</td>
-            </tr>
-        </table>
+        <div>
+            <h4>Znalosti a dovednosti</h4>
+            <!--div ng-repeat="skill in skills">
+                <h4>{{skill.name}}</h4>
+                <p>{{skill.text}}</p>
+            </div>
+            <div>
+                <h4>Znalost cizích jazyků</h4>
+                <p ng-repeat="lang in language"> {{lang.name}} - {{lang.text}}</p>
+            </div-->
+            <div ng-repeat="skill in skills2">{{skill}}</div>
+        </div>
+        <div>
+            <h4>Vzdelani</h4>
+            <div>
+                <h4>Vysoká škola finanční a správní &nbsp;&nbsp; 2012-2016</h4>
+                <p>Fakulta ekonomických studií</p>
+                <p>Forma: bakalářské prezenční jednooborové</p>
+                <p>Obor: Aplikovaná informatika</p>
+                <p>Název práce: Návrh a tvorba webové aplikace pro veganskou restauraci</p>
+            </div>
+            <div>
+                <h4>České vysoké učení technické v Praze &nbsp;&nbsp; 2011-2012</h4>
+                <p>Fakulta informačních technologií</p>
+            </div>
+            <div>
+                <h4>Pražské vzdělávací středisko &nbsp;&nbsp; 2010-2011</h4>
+                <p>Roční kurz češtiny pro cizince</p>
+            </div>
+        </div>
     </div>
-    <!--div id="kontakt">
-        <h4>Kontaktní formulář</h4>
-    </div-->
+    <div id="osobni">
+        <div>
+            <h4>Kontaktní údaje</h4>
+            <table class="table">
+                <tr>
+                    <td>Město:</td>
+                    <td>Praha</td>
+                </tr>
+                <tr>
+                    <td>Tel. číslo:</td>
+                    <td>+420773943165</td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td>yuliya@yuliya.cz</td>
+                </tr>
+                <tr>
+                    <td>Web:</td>
+                    <td><a href="http://yuliya.cz">yuliya.cz</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </section>

@@ -1,30 +1,25 @@
 body {
-    background: rgba(245, 242, 227, 0.41);
+    background: #f5f5f5;
+    color: #0f1626;
 }
 footer {
-    background-color: #453b35;
-    box-shadow: 1px 1px 5px 3px #453b35;
+    background-color: #bda889;
     font-family: Lobster;
-}
-header {
-    background-image: url("photos/light_noise_68.png");
-    font-family: Lobster;
-    box-shadow: 0px 0px 10px 1px rgba(69, 59, 53, 0.61);
-    /*border: 50px solid transparent;
-    -webkit-border-image: url("photos/curve.png") 50 stretch;
-    -o-border-image: url("photos/curve.png") 60 stretch;
-    border-image: url("photos/curve.png") 50 stretch;
-    border-bottom: 2px solid green;*/
-}
-.header-me * {
-    text-align: center;
-    color: #453b35;
-    font-style: oblique;
-}
-header {
     display: flex;
     display: -webkit-flex;
     flex-direction: column;
+    border-bottom: 7px solid #0f1626;
+    padding-top: 10px;
+}
+header {
+    font-family: Lobster;
+    /*background-color: rgba(255, 83, 61, 0.76);*/
+    border-bottom: 1px solid #bda889;
+    border-top: 7px solid #FF533D;
+}
+nav {
+    font-family: Lobster;
+    padding-right: 100px;
 }
 .navbar.navbar-default {
     border-radius: 0;
@@ -33,54 +28,62 @@ header {
 }
 .navbar-right {
     display: inline-block;
-    margin-left: 170px;
-    font-size: 17px;
-}
-header > nav {
-    margin-right: 100px;
-}
-.header-me {
-    padding-top: 13px;
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: row;
-    justify-content: space-around;
 }
 #name {
-    font-size: 50px !important;
-    display: table;
-    height: 190px;
+    color: #0f1626;
+    text-align: center !important;
 }
-#name > p {
-    display: table-cell;
-    vertical-align: middle;
+header > nav {
+    /*background-color: rgba(69, 59, 53, 0.75) !important;
+    box-shadow: 0px 4px 10px -4px #453b35;*/
 }
 #myPhoto {
-    width: 290px;
-    /*todo remove height*/
-    margin-top: -50px;
-    margin-bottom: 17px;
-    border-radius: 300px;
-    border: 3px solid #453b35;
-    box-shadow: 1px 1px 20px 1px rgba(255, 236, 247, 0.47);
+    position: absolute;
+    border-radius: 80%;
+    /*box-shadow: 1px 1px 5px 1px rgba(69, 59, 53, 0.33);
+    border: 1px solid #453b35;*/
+    z-index: 10;
+    border: 7px solid whitesmoke;
+}
+section {
+    min-height: 400px;
+}
+footer > div {
+    margin: auto;
+}
+/*footer > div:last-child {
+    height: 7px;
+    width: 100%;
+    background-color: #453b35;
+}*/
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+footer ul li {
+    display: inline;
+    padding: 10px;
+}
+footer > div > ul > li > a {
+    border-radius: 0 !important;
+    background-color: #0f1626 !important;
+    color: #bda889 !important;
 }
 #canvas {
     display: flex;
     display: -webkit-flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 50px;
+    padding: 15px;
     margin: auto;
-    width: 80%;
-    min-width: 650px;
 }
 #canvas > div {
     display: flex;
     display: -webkit-flex;
     flex-direction: column;
-    background-color: white;
+}
+#canvas > div h5 {
     text-align: center;
-    box-shadow: 1px 1px 1px 1px rgba(69, 59, 53, 0.45);
 }
 .imgproject {
     width: 100%;
@@ -105,47 +108,101 @@ header > nav {
     -webkit-background-size: 100%;
     background-size: 100%;
 }
-footer {
-    display: flex;
-    display: -webkit-flex;
-    justify-content: center;
-    padding-top: 20px;
-}
-footer ul {
-    list-style-type: none;
-    padding: 0;
-}
-footer ul li {
-    display: inline;
-    padding: 10px;
-}
-footer > div > ul > li > a {
-    border-radius: 0 !important;
-    border: 1px solid #f5f2e3 !important;
-    background-color: #453b35 !important;
-}
 #about {
     display: flex;
     display: -webkit-flex;
+    flex-direction: column;
+    margin: auto;
+}
+#about h4 {
+    font-family: Lobster;
+    text-align: center;
+}
+#znalosti {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    padding: 20px;
+}
+#osobni table tr td {
+    border: unset !important;
+    text-align: right;
+}
+#osobni table tr td:last-child {
+    text-align: left !important;
+}
+#osobni > div {
+    background-color: rgba(255, 83, 61, 0.34);
+    padding: 20px;
+}
+#znalosti > div {
+    width: 50%;
+    display: flex;
+    display: -webkit-flex;
+    margin-top: 10px;
+}
+#znalosti > div:first-child {
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+#znalosti > div:last-child {
+    flex-direction: column;
+    text-align: right;
+}
+#znalosti > div:first-child > div {
+    padding: 10px;
+    font-size: x-large;
+}
+#znalosti > div > h4 {
+    width: 100%;
+}
+/*#znalosti > div:nth-child(2n+1), #znalosti > div:first-child, #about #osobni > div:first-child {
+    background-color: rgba(224, 220, 247, 0.29);
+}
+#znalosti > div:nth-child(2n), #about #osobni > div:nth-child(2n) {
+    background-color: rgba(255, 248, 253, 0.29);
+}*/
+#znalosti h4 {
+    font-family: Lobster;
+}
+@media screen and (min-width: 769px) {
+    #myPhoto {
+        left: 10%;
+        margin-top: 10px;
+        width: 170px;
+    }
+    .navbar-right {
+        margin-left: 170px;
+        font-size: 17px;
+    }
+    #name {
+        font-size: 50px !important;
+    }
+    header > nav {
+        padding-right: 100px;
+    }
+    #znalosti > div:first-child {
+        border-right: 1px solid #bda889;
+    }
+    #canvas {
+        width: 80%;
+        min-width: 650px;
+    }
+    #about {
+    }
 }
 @media screen and (max-width: 768px) {
-    header > .header-me {
-        flex-direction: column;
-    }
-    .header-me > div:first-child {
-        order: 1;
-    }
     #myPhoto {
         width: 95%;
         max-width: 400px;
         margin-bottom: unset;
         margin-top: unset;
-
+        position: relative;
+        order: 1;
     }
     #name {
-        height: 100px;
+        /*height: 100px;*/
         width: 100%;
         text-align: center;
         margin: auto;
@@ -171,11 +228,19 @@ footer > div > ul > li > a {
     }
     #about {
         flex-direction: column;
-        width: 90%;
-        max-width: 400px;
+        min-width: 300px;
         margin: auto;
+    }
+    #znalosti {
+        flex-direction: column;
+    }
+    #znalosti > div {
+        width: 90%;
     }
     .navbar-right {
         font-size: 20px;
+    }
+    #crabgame, #sudokugame {
+        margin-top: 10px !important;
     }
 }
