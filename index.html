@@ -20,19 +20,16 @@
 </head>
 <body data-ng-controller="mainCtrl" ng-cloak>
     <header>
-        <div class="header-me">
-            <div><img id="myPhoto" src="photos/me2_1.jpeg" alt="My photo"></div>
-            <div id="name">
-                <p>Yuliya&nbsp;&nbsp;Ovchinnikova</p>
-            </div>
+        <div id="name">
+            <p>Yuliya&nbsp;&nbsp;Ovchinnikova</p>
         </div>
+        <nav class="navbar navbar-default" role="navigation">
+            <ul class="nav navbar-nav">
+                <li><a ui-sref="home">Domu</a></li>
+                <li><a ui-sref="about">O mně</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav class="navbar navbar-default" role="navigation">
-        <ul class="nav navbar-nav navbar-right">
-            <li><a ui-sref="home">Domu</a></li>
-            <li><a ui-sref="about">O mně</a></li>
-        </ul>
-    </nav>
     <main ui-view> </main>
     <footer>
         <div>

@@ -1,49 +1,39 @@
 body {
-    background: #f5f5f5;
+    background: url("photos/light_noise_68.png");
     color: #0f1626;
 }
 footer {
-    background-color: #bda889;
     font-family: Lobster;
     display: flex;
     display: -webkit-flex;
     flex-direction: column;
-    border-bottom: 7px solid #0f1626;
     padding-top: 10px;
+    border-top: 1px solid #0f1626;
 }
 header {
     font-family: Lobster;
-    /*background-color: rgba(255, 83, 61, 0.76);*/
-    border-bottom: 1px solid #bda889;
-    border-top: 7px solid #FF533D;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    border-bottom: 1px solid #0f1626;
 }
-nav {
-    font-family: Lobster;
-    padding-right: 100px;
+header > * {
+    margin: auto;
+    padding: 0 50px 0 50px;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 .navbar.navbar-default {
     border-radius: 0;
     border: none;
     background-color: transparent;
 }
-.navbar-right {
-    display: inline-block;
-}
 #name {
     color: #0f1626;
     text-align: center !important;
-}
-header > nav {
-    /*background-color: rgba(69, 59, 53, 0.75) !important;
-    box-shadow: 0px 4px 10px -4px #453b35;*/
-}
-#myPhoto {
-    position: absolute;
-    border-radius: 80%;
-    /*box-shadow: 1px 1px 5px 1px rgba(69, 59, 53, 0.33);
-    border: 1px solid #453b35;*/
-    z-index: 10;
-    border: 7px solid whitesmoke;
 }
 section {
     min-height: 400px;
@@ -51,11 +41,6 @@ section {
 footer > div {
     margin: auto;
 }
-/*footer > div:last-child {
-    height: 7px;
-    width: 100%;
-    background-color: #453b35;
-}*/
 footer ul {
     list-style-type: none;
     padding: 0;
@@ -67,36 +52,39 @@ footer ul li {
 footer > div > ul > li > a {
     border-radius: 0 !important;
     background-color: #0f1626 !important;
-    color: #bda889 !important;
 }
-#canvas {
+#myprojects {
     display: flex;
     display: -webkit-flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 15px;
-    margin: auto;
+    padding: 45px;
 }
-#canvas > div {
+#myprojects > div {
     display: flex;
     display: -webkit-flex;
     flex-direction: column;
 }
-#canvas > div h5 {
-    text-align: center;
-}
-.imgproject {
+.imgproject > div {
     width: 100%;
-    height: 170px;
+    height: 100%;
+    background-color: rgba(15, 22, 38, 0.5);
+    color: white;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: Lobster;
 }
-#canvas > div {
-    width: 250px;
+.imgproject:hover > div {
+    background-color: transparent;
 }
-#canvas > div > div {
-    margin: 0 auto;
+.imgproject:hover > div h3 {
+    visibility: hidden;
 }
 #veganrest .imgproject {
-    background: url("vegan-rest.png") no-repeat;
+    background: url("vegan-rest.png");
     background-size: 100% 100%;
 }
 #crabgame .imgproject {
@@ -112,7 +100,6 @@ footer > div > ul > li > a {
     display: flex;
     display: -webkit-flex;
     flex-direction: column;
-    margin: auto;
 }
 #about h4 {
     font-family: Lobster;
@@ -125,120 +112,143 @@ footer > div > ul > li > a {
     padding: 20px;
 }
 #osobni table tr td {
-    border: unset !important;
+    vertical-align: middle;
+    border: unset;
+}
+#osobni table tr td:first-child {
     text-align: right;
 }
-#osobni table tr td:last-child {
-    text-align: left !important;
-}
-#osobni > div {
-    background-color: rgba(255, 83, 61, 0.34);
-    padding: 20px;
-}
-#znalosti > div {
-    width: 50%;
+#osobni {
     display: flex;
     display: -webkit-flex;
-    margin-top: 10px;
+    flex-direction: row;
+    justify-content: space-around;
 }
-#znalosti > div:first-child {
+#osobni > div img {
+    height: 200px;
+}
+#znalosti {
+    display: flex;
+    display: -webkit-flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-#znalosti > div:last-child {
+#znalosti > div {
+    width: 240px;
+    min-height: 100px;
+    border: 1px solid #0f1626;
+    margin-top: 50px;
+}
+.block > div:not(:first-child) {
+    text-align: center;
+}
+.block > div:nth-child(2) {
+    padding-top: 70px;
+}
+#znalosti > div:first-child
+.circle {
+    border-radius: 100%;
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 65px;
+    border: 5px solid #0f1626;
+    background-color: #f2efdc;
+    display: flex;
+    display: -webkit-flex;
     flex-direction: column;
-    text-align: right;
-}
-#znalosti > div:first-child > div {
-    padding: 10px;
-    font-size: x-large;
-}
-#znalosti > div > h4 {
-    width: 100%;
-}
-/*#znalosti > div:nth-child(2n+1), #znalosti > div:first-child, #about #osobni > div:first-child {
-    background-color: rgba(224, 220, 247, 0.29);
-}
-#znalosti > div:nth-child(2n), #about #osobni > div:nth-child(2n) {
-    background-color: rgba(255, 248, 253, 0.29);
-}*/
-#znalosti h4 {
-    font-family: Lobster;
+    justify-content: center;
+    text-align: center;
 }
 @media screen and (min-width: 769px) {
-    #myPhoto {
-        left: 10%;
-        margin-top: 10px;
-        width: 170px;
+    header {
+        height: 120px;
     }
-    .navbar-right {
-        margin-left: 170px;
+    header > * {
+        height: 100%;
+    }
+    ul.navbar-nav {
+        justify-content: flex-end;
         font-size: 17px;
     }
     #name {
         font-size: 50px !important;
     }
-    header > nav {
-        padding-right: 100px;
+    #myprojects > div {
+        width: 30%;
+        max-width: 330px;
     }
-    #znalosti > div:first-child {
-        border-right: 1px solid #bda889;
-    }
-    #canvas {
-        width: 80%;
-        min-width: 650px;
-    }
-    #about {
+    .imgproject {
+        width: 100%;
+        height: 200px;
     }
 }
 @media screen and (max-width: 768px) {
-    #myPhoto {
-        width: 95%;
-        max-width: 400px;
-        margin-bottom: unset;
-        margin-top: unset;
-        position: relative;
-        order: 1;
+    header {
+        flex-direction: column !important;
+    }
+    header nav {
+        width: 80%;
+        height: 30px;
+    }
+    header nav ul {
+        padding: 10px;
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
     #name {
-        /*height: 100px;*/
         width: 100%;
         text-align: center;
         margin: auto;
         font-size: 30px !important;
+        padding: 15px;
     }
-    header > nav {
+    nav {
         margin: auto;
         order: 2;
     }
-    ul.navbar-right {
+    ul.navbar-nav {
         display: flex;
         display: -webkit-flex;
         flex-direction: row;
-        margin: 0 0 10px 0;
+        font-size: 20px;
     }
-    #canvas {
+    #myprojects {
         flex-direction: column;
         width: 90%;
         min-width: 300px;
     }
-    #canvas > div {
+    #myprojects > div {
         margin: auto;
+    }
+    .imgproject {
+        width: 100%;
+        height: 180px;
+    }
+    #myprojects > div {
+        width: 300px;
+    }
+    #osobni {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #osobni > div {
+        border-top: 1px solid rgba(15, 22, 38, 0.15);
+        width: 90%;
+    }
+    #znalosti {
+        margin-top: -50px;
     }
     #about {
         flex-direction: column;
         min-width: 300px;
-        margin: auto;
-    }
-    #znalosti {
-        flex-direction: column;
-    }
-    #znalosti > div {
-        width: 90%;
-    }
-    .navbar-right {
-        font-size: 20px;
+        margin-top: 50px;
     }
     #crabgame, #sudokugame {
         margin-top: 10px !important;

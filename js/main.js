@@ -57,8 +57,9 @@ angular.module('myweb', ['ngRoute', 'ui.router'])
                 name: 'Angličtina',
                 text: 'pasivně'
         }];
-        $scope.test = 'Test angular';
-        $scope.skills2 = ['HTML', 'CSS', 'Javascript', 'Node.js', 'Bootstrap', 'základy jQuery', 'C#', 'základy PixiJS', 'základy GIT', 'MS Windows', 'Linux', 'MSSQL', 'MongoDB'];
+        $scope.programming = $scope.skills[0].text.split(', ');
+        $scope.os = $scope.skills[1].text.split(', ');
+        $scope.db = $scope.skills[2].text.split(', ');
     }]);
 
 
