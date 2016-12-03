@@ -1,5 +1,5 @@
 body {
-    background: url("photos/light_noise_68.png");
+    background: url("photos/light_noise_69.png");
     color: #0f1626;
 }
 footer {
@@ -36,7 +36,7 @@ header > * {
     text-align: center !important;
 }
 section {
-    min-height: 400px;
+    min-height: 430px;
 }
 footer > div {
     margin: auto;
@@ -59,6 +59,7 @@ footer > div > ul > li > a {
     flex-direction: row;
     justify-content: space-around;
     padding: 45px;
+    margin: auto;
 }
 #myprojects > div {
     display: flex;
@@ -84,15 +85,15 @@ footer > div > ul > li > a {
     visibility: hidden;
 }
 #veganrest .imgproject {
-    background: url("vegan-rest.png");
+    background: url("photos/vegan-rest.png");
     background-size: 100% 100%;
 }
 #crabgame .imgproject {
-    background: url("crab-game.png") no-repeat;
+    background: url("photos/crab-game.png") no-repeat;
     background-size: 100% 100%;
 }
 #sudokugame .imgproject {
-    background: url("sudoku-game.png") no-repeat;
+    background: url("photos/sudoku-game.png") no-repeat;
     -webkit-background-size: 100%;
     background-size: 100%;
 }
@@ -101,19 +102,36 @@ footer > div > ul > li > a {
     display: -webkit-flex;
     flex-direction: column;
 }
-#about h4 {
+#about h4, #about h3 {
     font-family: Lobster;
     text-align: center;
 }
 #znalosti {
     display: flex;
     display: -webkit-flex;
+    flex-direction: column;
+    order: 1;
+    width: 70%;
+    min-width: 740px;
+    margin: auto;
+}
+#znalosti > div {
+    display: flex;
+    display: -webkit-flex;
     flex-direction: row;
-    padding: 20px;
+    text-align: center;
+}
+#znalosti > div > div {
+    width: 50%;
+    padding: 6px;
 }
 #osobni table tr td {
     vertical-align: middle;
     border: unset;
+}
+#osobni table tr td a, #osobni table tr td a:hover:link:visited {
+    color: #0f1626;
+    text-decoration: none;
 }
 #osobni table tr td:first-child {
     text-align: right;
@@ -122,45 +140,44 @@ footer > div > ul > li > a {
     display: flex;
     display: -webkit-flex;
     flex-direction: row;
-    justify-content: space-around;
 }
-#osobni > div img {
+#osobni > div {
+    width: 50%;
+}
+#osobni-info img {
     height: 200px;
 }
-#znalosti {
+#osobni-educ > div {
+    margin: auto;
+}
+#table-img {
     display: flex;
     display: -webkit-flex;
     flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-#znalosti > div {
-    width: 240px;
-    min-height: 100px;
-    border: 1px solid #0f1626;
-    margin-top: 50px;
-}
-.block > div:not(:first-child) {
-    text-align: center;
-}
-.block > div:nth-child(2) {
-    padding-top: 70px;
-}
-#znalosti > div:first-child
-.circle {
-    border-radius: 100%;
-    width: 110px;
-    height: 110px;
-    position: absolute;
-    margin-top: -50px;
-    margin-left: 65px;
-    border: 5px solid #0f1626;
-    background-color: #f2efdc;
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: column;
     justify-content: center;
-    text-align: center;
+    margin: auto;
+}
+#table-img > * {
+    width: 50%;
+    margin: auto;
+}
+#about h3 {
+    width: 100%;
+    color: #7f7f7f;
+    text-shadow: 1px 0 rgba(0, 0, 0, 0.35);
+}
+.block {
+    font-size: 17px;
+    font-weight: 600;
+}
+.block > div p {
+    display: inline-block;
+    background-color: white;
+    border: 1px solid #c9c9c9;
+    padding: 9px;
+}
+#about button {
+    border-radius: 0;
 }
 @media screen and (min-width: 769px) {
     header {
@@ -183,6 +200,27 @@ footer > div > ul > li > a {
     .imgproject {
         width: 100%;
         height: 200px;
+    }
+}
+@media screen and (max-width: 880px) {
+
+    #osobni {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #osobni-info {
+        width: 70%;
+        min-width: 575px;
+    }
+    #name {
+        font-size: 40px !important;
+    }
+    #osobni-educ {
+        width: 90% !important;
+    }
+    #znalosti {
+        min-width: 100%;
     }
 }
 @media screen and (max-width: 768px) {
@@ -216,7 +254,7 @@ footer > div > ul > li > a {
         display: flex;
         display: -webkit-flex;
         flex-direction: row;
-        font-size: 20px;
+        font-size: 16px;
     }
     #myprojects {
         flex-direction: column;
@@ -239,18 +277,66 @@ footer > div > ul > li > a {
         text-align: center;
     }
     #osobni > div {
-        border-top: 1px solid rgba(15, 22, 38, 0.15);
         width: 90%;
     }
-    #znalosti {
-        margin-top: -50px;
+    #osobni-info, #osobni-info > div {
+        width: 80%;
+        min-width: 300px;
+    }
+    #osobni-educ > div {
+        width: 80%;
+        min-width: 300px;
+    }
+    #znalosti > div {
+        flex-direction: column;
+        text-align: center;
+    }
+    .block {
+        margin: auto;
+        width: 100% !important;
     }
     #about {
         flex-direction: column;
-        min-width: 300px;
-        margin-top: 50px;
+    }
+    #about > div {
+        width: 100%;
     }
     #crabgame, #sudokugame {
         margin-top: 10px !important;
+    }
+    #myprojects > div {
+        width: 300px;
+        margin: auto;
+    }
+    .imgproject {
+        width: 300px;
+        height: 210px;
+    }
+}
+@media screen and (max-width: 590px) {
+    #about {
+        width: 100%;
+    }
+    #table-img {
+        flex-direction: column;
+        width: 80% !important;
+        margin: auto;
+        text-align: center;
+    }
+    #table-img table {
+        order: 1;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    #table-img > * {
+        width: 100%;
+    }
+    #myprojects > div {
+         width: 210px;
+     }
+    .imgproject {
+        width: 210px;
+        height: 140px;
     }
 }

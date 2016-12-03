@@ -48,14 +48,14 @@ angular.module('myweb', ['ngRoute', 'ui.router'])
             }
         ];
         $scope.language = [ {
+                name: 'Čeština',
+                text: 'pokročilý'
+            }, {
                 name: 'Ruština',
                 text: 'rodilý mluvčí'
             }, {
-                name: 'Čeština',
-                text: 'výborně slovem i písmem'
-            }, {
                 name: 'Angličtina',
-                text: 'pasivně'
+                text: 'středně pokročilý'
         }];
         $scope.programming = $scope.skills[0].text.split(', ');
         $scope.os = $scope.skills[1].text.split(', ');
