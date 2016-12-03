@@ -35,6 +35,10 @@ header > * {
     color: #0f1626;
     text-align: center !important;
 }
+#name a, #name a:hover:link:visited {
+    color: #0f1626;
+    text-decoration: none;
+}
 section {
     min-height: 430px;
 }
