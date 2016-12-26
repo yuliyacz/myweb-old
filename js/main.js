@@ -19,14 +19,7 @@ angular.module('myweb', ['ngRoute', 'ui.router'])
     })
     .controller('mainCtrl', ['$scope', '$state', '$location', function ($scope, $state, $location) {
         $scope.$on('$viewContentLoaded', function() {
-            //var canvas = document.getElementById('canvas')[0].getContext('2d');//angular.element(document.querySelector('#canvas'));
-            /*if(canvas!==null) {
-                var context = canvas[0].getContext('2d');
-                console.log(canvas);
-            }
-            else {
-                console.log('canvas is  null');
-            }*/
+
         });
         $scope.myhref = function (link) {
             //location.href = link;
