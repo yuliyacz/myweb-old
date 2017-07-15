@@ -6,61 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=latin-ext" rel="stylesheet">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.0.0/bootstrap-social.css" />
-    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.0.0/bootstrap-social.css"/>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/classes.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 
 </head>
-<body data-ng-controller="mainCtrl" ng-cloak>
-    <header>
-        <div id="name">
-            <p><a ui-sref="home">Yuliya&nbsp;&nbsp;Ovchinnikova</a></p>
+<body data-ng-controller="mainCtrl" ng-cloak class="text-darkblue">
+    <header id="header" class="font-lobster">
+        <div class="text-largest name text-darkblue">
+            <a ui-sref="home">Yuliya&nbsp;&nbsp;Ovchinnikova</a>
         </div>
-        <nav class="navbar navbar-default" role="navigation">
-            <ul class="nav navbar-nav">
-                <li><a ui-sref="home">Projekty</a></li>
-                <li><a ui-sref="about">O mně</a></li>
-            </ul>
-        </nav>
+        <ul class="nav navbar-nav">
+            <li><a ui-sref="home">Projekty</a></li>
+            <li><a ui-sref="about">O mně</a></li>
+        </ul>
     </header>
-    <main ui-view> </main>
-    <footer>
-        <div>
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/yuliya.ovch" class="btn btn-social-icon btn-facebook">
-                        <span class="fa fa-facebook"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/juliecz" class="btn btn-social-icon btn-linkedin">
-                        <span class="fa fa-linkedin"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/juliecz/" class="btn btn-social-icon btn-github">
-                        <span class="fa fa-github"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://bitbucket.org/juliecz/" class="btn btn-social-icon btn-bitbucket">
-                        <span class="fa fa-bitbucket"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://vk.com/juliecz" class="btn btn-social-icon btn-vk">
-                        <span class="fa fa-vk"></span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+    <main ui-view></main>
+    <footer class="text-center">
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/yuliya.ovch" class="btn btn-social-icon btn-facebook">
+                    <span class="fa fa-facebook"></span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/juliecz" class="btn btn-social-icon btn-linkedin">
+                    <span class="fa fa-linkedin"></span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/juliecz/" class="btn btn-social-icon btn-github">
+                    <span class="fa fa-github"></span>
+                </a>
+            </li>
+            <li>
+                <a href="https://bitbucket.org/juliecz/" class="btn btn-social-icon btn-bitbucket">
+                    <span class="fa fa-bitbucket"></span>
+                </a>
+            </li>
+            <li>
+                <a href="https://vk.com/juliecz" class="btn btn-social-icon btn-vk">
+                    <span class="fa fa-vk"></span>
+                </a>
+            </li>
+        </ul>
     </footer>
 </body>
 </html>

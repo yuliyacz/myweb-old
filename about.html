@@ -1,22 +1,6 @@
 <section id="about">
-    <div id="znalosti">
-        <h3>Znalosti a dovednosti</h3>
-        <div>
-            <div class="block skills">
-                <div class="skill"><!--h4>Programování</h4--></div>
-                <div><p>Node.js</p> <p>C#</p> <p>PHP</p></div>
-                <div><p>AngularJS</p> <p>jQuery</p> <p>PixiJS</p> <p>HTML5</p> <p>CSS3</p></div>
-                <div><p>Linux</p> <p>MS Windows</p></div>
-                <div><p>MongoDB</p> <p>MSSQL</p></div>
-            </div>
-            <div class="block lang">
-                <div class="skill"><h4>Znalost cizích jazyků</h4></div>
-                <div ng-repeat="x in language"><p>{{x.name}} - {{x.text}}</p></div>
-            </div>
-        </div>
-    </div>
-    <div id="osobni">
-        <div id="osobni-info">
+    <div id="personal">
+        <!--div id="osobni-info">
             <h3>Kontaktní údaje</h3>
             <div id="table-img">
                 <table class="table">
@@ -35,25 +19,62 @@
                 </table>
                 <div><img src="photos/me-min.png" alt="My photo"></div>
             </div>
-        </div>
-        <div id="osobni-educ">
-            <div>
-                <h3>Vzdělání</h3>
-                <div>
-                    <h4>Vysoká škola finanční a správní &nbsp;&nbsp; 2012-2016</h4>
+        </div-->
+
+        <div class="personal-education">
+            <h3 class="text-center font-lobster">Vzdělání</h3>
+            <div class="info_block">
+                <div class="info">
+                    <h4>Vysoká škola finanční a správní</h4>
                     <p>Fakulta ekonomických studií</p>
                     <p>Obor: Aplikovaná informatika</p>
                     <p>Bakalářská práce: Návrh a tvorba webové aplikace pro veganskou restauraci
                         <button type="button" class="btn btn-default" ng-click="myhref('http://yuliya.cz/bp.pdf')">PDF</button>
                     </p>
                 </div>
-                <!--div>
-                    <h4> České vysoké učení technické v Praze &nbsp;&nbsp; 2011-2012</h4>
-                    <p> Fakulta informačních technologií</p>
-                </div-->
-                <div>
-                    <h4>Pražské vzdělávací středisko &nbsp;&nbsp; 2010-2011</h4>
+                <div class="date text-center">2012-2016</div>
+            </div>
+            <div class="info_block">
+                <div class="info">
+                    <h4>Pražské vzdělávací středisko</h4>
                     <p>Roční kurz češtiny pro cizince</p>
+                </div>
+                <div class="date text-center">2010-2011</div>
+            </div>
+        </div>
+        <div class="personal-work">
+            <h3 class="text-center font-lobster">Pracovní zkušenosti</h3>
+            <div class="info_block">
+                <div class="info">
+                    <h4>Fox Media Czech Republic</h4>
+                    <p><b>JavaScript developer</b></p>
+                    <p>Node.js, React, Redux</p>
+                </div>
+                <div class="date text-center">12/2016-současnost</div>
+            </div>
+        </div>
+    </div>
+    <div id="skills">
+        <h3 class="text-center font-lobster">Znalosti a dovednosti</h3>
+        <div>
+            <div class="technical">
+                <h4 class="text-center">Technické znalosti</h4>
+                <div>
+                    <div ng-repeat="skill in skills" class="technical-skills">
+                        <div class="technical-skills-type">{{skill.name}}</div>
+                        <div class="technical-skills-bytype">
+                            <span ng-repeat="skillname in skill.skills">
+                                {{skillname}}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="languages">
+                <h4 class="text-center">Znalost cizích jazyků</h4>
+                <div ng-repeat="lang in language">
+                    <div>{{lang.name}}</div>
+                    <div>{{lang.text}}</div>
                 </div>
             </div>
         </div>

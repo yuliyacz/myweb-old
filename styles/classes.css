@@ -1,0 +1,30 @@
+.text-center {
+    text-align: center;
+}
+.text-darkblue {
+    color: #0f1626;
+}
+.text-largest {
+    font-size: xx-large;
+}
+
+.font-lobster {
+    font-family: Lobster;
+}
+
+.border-darkblue-innershadow {
+    border: 1px solid #0f1626;
+}
+
+.veganrest-img {
+    background: url("../photos/vegan-rest.png") no-repeat;
+    background-size: cover;
+}
+.crabgame-img {
+    background: url("../photos/crab-game.png") no-repeat;
+    background-size: cover;
+}
+.sudokugame-img {
+    background: url("../photos/sudoku-game.png") no-repeat;
+    background-size: cover;
+}
