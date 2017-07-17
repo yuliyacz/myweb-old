@@ -50,3 +50,11 @@
     background: url("../photos/sudoku-game.png") no-repeat;
     background-size: cover;
 }
+.holmesplace-dsp {
+    background: url("../photos/dsp.png") no-repeat;
+    background-size: cover;
+}
+.holmesplace-composer {
+    background: url("../photos/composer.png") no-repeat;
+    background-size: cover;
+}

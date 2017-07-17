@@ -102,13 +102,15 @@ footer ul li a {
     display: -webkit-flex;
     flex-direction: column;
     /*width: 30%;*/
-    width: 350px;
+    max-width: 400px;
+    width: 90%;
+    margin: 15px;
 }
 
 /* PHOTOS TO PROJECTS */
 .imgproject > div {
     height: 230px;
-    background-color: rgba(15, 22, 38, 0.51);
+    background-color: rgba(15, 22, 38, 0.47);
     color: white;
     display: flex;
     display: -webkit-flex;
