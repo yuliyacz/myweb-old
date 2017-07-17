@@ -1,19 +1,41 @@
 .text-center {
     text-align: center;
 }
-.text-darkblue {
-    color: #0f1626;
+.text-darkbrown {
+    /*color: #0f1626;*/
+    color: #4b4438;
 }
+.text-lightbrown {
+    color: #989289;
+}
+.text-green {
+    color: #255e50;
+}
+
 .text-largest {
     font-size: xx-large;
+}
+.text-large {
+    font-size: large;
+}
+.text-upper {
+    text-transform: uppercase;
+}
+
+.background-white {
+    background-color: rgba(255, 255, 255, 0.48);
 }
 
 .font-lobster {
     font-family: Lobster;
 }
 
-.border-darkblue-innershadow {
+.border-darkbrown-innershadow {
     border: 1px solid #0f1626;
+}
+.border-color {
+    padding: 30px;
+    border: 1px solid rgb(203, 189, 183);
 }
 
 .veganrest-img {

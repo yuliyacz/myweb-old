@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Yuliya Ovchinnikova</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="photos/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=latin-ext" rel="stylesheet">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
@@ -22,24 +23,27 @@
     <script src="js/main.js"></script>
 
 </head>
-<body data-ng-controller="mainCtrl" ng-cloak class="text-darkblue">
+<body data-ng-controller="mainCtrl" ng-cloak class="text-darkbrown">
     <header id="header" class="font-lobster">
-        <div class="text-largest name text-darkblue">
+        <div class="name text-darkbrown">
+            <div class="photo"></div>
             <a ui-sref="home">Yuliya&nbsp;&nbsp;Ovchinnikova</a>
         </div>
-        <ul class="nav navbar-nav">
+        <!--ul class="nav navbar-nav">
             <li><a ui-sref="home">Projekty</a></li>
             <li><a ui-sref="about">O mně</a></li>
-        </ul>
+        </ul-->
     </header>
     <main ui-view></main>
     <footer class="text-center">
-        <ul>
-            <li>
-                <a href="https://www.facebook.com/yuliya.ovch" class="btn btn-social-icon btn-facebook">
-                    <span class="fa fa-facebook"></span>
-                </a>
-            </li>
+        <div>
+            <ul>
+                <li>Město: Praha</li>
+                <li>Email: yuliya@yuliya.cz</li>
+                <li>Web: yuliya.cz</li>
+            </ul>
+        </div>
+        <ul class="contacts">
             <li>
                 <a href="https://www.linkedin.com/in/juliecz" class="btn btn-social-icon btn-linkedin">
                     <span class="fa fa-linkedin"></span>
@@ -53,6 +57,11 @@
             <li>
                 <a href="https://bitbucket.org/juliecz/" class="btn btn-social-icon btn-bitbucket">
                     <span class="fa fa-bitbucket"></span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/yuliya.ovch" class="btn btn-social-icon btn-facebook">
+                    <span class="fa fa-facebook"></span>
                 </a>
             </li>
             <li>

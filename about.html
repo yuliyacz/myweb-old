@@ -1,80 +1,69 @@
 <section id="about">
-    <div id="personal">
-        <!--div id="osobni-info">
-            <h3>Kontaktní údaje</h3>
-            <div id="table-img">
-                <table class="table">
-                    <tr>
-                        <td>Město: </td>
-                        <td>Praha</td>
-                    </tr>
-                    <tr>
-                        <td>Email:</td>
-                        <td>yuliya@yuliya.cz</td>
-                    </tr>
-                    <tr>
-                        <td>Web:</td>
-                        <td><a href="http://yuliya.cz">yuliya.cz</a></td>
-                    </tr>
-                </table>
-                <div><img src="photos/me-min.png" alt="My photo"></div>
+    <div class="work">
+        <h3 class="font-lobster">Pracovní zkušenosti</h3>
+        <div class="about_block text-lightbrown">
+            <div ng-repeat="work in work" class="about_block_info">
+                <div class="info_description">
+                    <div>{{work.company}}</div>
+                    <p><b>{{work.position}}</b></p>
+                    <p>{{work.description}}</p>
+                </div>
+                <div class="info_date">
+                    <div>{{work.date}}</div>
+                </div>
             </div>
-        </div-->
-
-        <div class="personal-education">
-            <h3 class="text-center font-lobster">Vzdělání</h3>
-            <div class="info_block">
-                <div class="info">
-                    <h4>Vysoká škola finanční a správní</h4>
+        </div>
+    </div>
+    <div class="education">
+        <h3 class="font-lobster">Vzdělání</h3>
+        <div class="about_block text-lightbrown">
+            <div class="about_block_info">
+                <div class="info_description">
+                    <div>Vysoká škola finanční a správní</div>
                     <p>Fakulta ekonomických studií</p>
                     <p>Obor: Aplikovaná informatika</p>
                     <p>Bakalářská práce: Návrh a tvorba webové aplikace pro veganskou restauraci
                         <button type="button" class="btn btn-default" ng-click="myhref('http://yuliya.cz/bp.pdf')">PDF</button>
                     </p>
                 </div>
-                <div class="date text-center">2012-2016</div>
+                <div class="info_date">
+                    <div>2012-2016</div>
+                </div>
             </div>
-            <div class="info_block">
-                <div class="info">
-                    <h4>Pražské vzdělávací středisko</h4>
+            <div class="about_block_info">
+                <div class="info_description">
+                    <div>Pražské vzdělávací středisko</div>
                     <p>Roční kurz češtiny pro cizince</p>
                 </div>
-                <div class="date text-center">2010-2011</div>
-            </div>
-        </div>
-        <div class="personal-work">
-            <h3 class="text-center font-lobster">Pracovní zkušenosti</h3>
-            <div class="info_block">
-                <div class="info">
-                    <h4>Fox Media Czech Republic</h4>
-                    <p><b>JavaScript developer</b></p>
-                    <p>Node.js, React, Redux</p>
+                <div class="info_date">
+                    <div>2010-2011</div>
                 </div>
-                <div class="date text-center">12/2016-současnost</div>
             </div>
         </div>
     </div>
-    <div id="skills">
-        <h3 class="text-center font-lobster">Znalosti a dovednosti</h3>
+    <div class="skills">
+        <h3 class="font-lobster">Znalosti a dovednosti</h3>
         <div>
             <div class="technical">
-                <h4 class="text-center">Technické znalosti</h4>
+                <h4>Technické znalosti</h4>
                 <div>
-                    <div ng-repeat="skill in skills" class="technical-skills">
-                        <div class="technical-skills-type">{{skill.name}}</div>
-                        <div class="technical-skills-bytype">
-                            <span ng-repeat="skillname in skill.skills">
-                                {{skillname}}
-                            </span>
+                    <div ng-repeat="skill in skills" class="skill-block text-lightbrown">
+                        <div class="skillname">{{skill.name}}</div>
+                        <div class="allskills">
+                        <span ng-repeat="skillname in skill.skills">
+                            {{skillname}}
+                        </span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="languages">
-                <h4 class="text-center">Znalost cizích jazyků</h4>
-                <div ng-repeat="lang in language">
-                    <div>{{lang.name}}</div>
-                    <div>{{lang.text}}</div>
+                <h4>Znalost cizích jazyků</h4>
+                <div>
+                    <div ng-repeat="lang in language" class="skill-block text-lightbrown">
+                        <div class="skillname">{{lang.name}}</div>
+                        <div class="allskills">{{lang.text}}</div>
+                    </div>
                 </div>
             </div>
         </div>

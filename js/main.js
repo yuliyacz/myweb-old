@@ -9,10 +9,10 @@ angular.module('myweb', ['ngRoute', 'ui.router'])
 				url: '/',
 				templateUrl: 'home.html'
 			})
-			.state('about', {
+			/*.state('about', {
 				url: '/about',
 				templateUrl: 'about.html'
-			});
+			})*/;
 	})
 	.run(function ($state) {
 		$state.go('home');
@@ -21,10 +21,12 @@ angular.module('myweb', ['ngRoute', 'ui.router'])
 		$scope.$on('$viewContentLoaded', function () {
 		
 		});
+		
 		$scope.myhref = function (link) {
 			//location.href = link;
 			window.open(link, '_blank');
 		};
+		
 		//var context = canvas.getContext('2d');
 		$scope.skills = [{
 			name: 'Backend',
@@ -41,8 +43,8 @@ angular.module('myweb', ['ngRoute', 'ui.router'])
 		}, {
 			name: 'DevOps',
 			skills: ['GIT', 'Heroku']
-		}
-		];
+		}];
+		
 		$scope.language = [{
 			name: 'Čeština',
 			text: 'plynně slovem i písmem'
@@ -52,6 +54,13 @@ angular.module('myweb', ['ngRoute', 'ui.router'])
 		}, {
 			name: 'Angličtina',
 			text: 'středně pokročilý, čtení technické dokumentace'
+		}];
+		
+		$scope.work = [{
+			company: 'Fox Media Czech Republic',
+			position: 'JavaScript developer',
+			description: 'Node.js, React, Redux',
+			date: '12/2016-současnost'
 		}];
 	}]);
 
