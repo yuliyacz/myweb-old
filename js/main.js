@@ -33,16 +33,16 @@ angular.module('myweb', ['ngRoute', 'ui.router'])
 			skills: ['Node.js', 'C#']
 		}, {
 			name: 'Frontend',
-			skills: ['React', 'Redux', 'AngularJS', 'jQuery', 'PixiJS', 'HTML5', 'CSS3', 'Bootstrap']
+			skills: ['React,', 'Redux,', 'AngularJS,', 'jQuery,', 'PixiJS,', 'HTML5,', 'CSS3,', 'Bootstrap']
 		}, {
 			name: 'Operační systémy',
-			skills: ['Linux', 'MS Windows']
+			skills: ['Linux,', 'MS Windows']
 		}, {
 			name: 'Databáze',
-			skills: ['PostgreSQL', 'MongoDB', 'MSSQL']
+			skills: ['PostgreSQL,', 'MongoDB,', 'MSSQL']
 		}, {
 			name: 'DevOps',
-			skills: ['GIT', 'Heroku']
+			skills: ['GIT,', 'Heroku']
 		}];
 		
 		$scope.language = [{

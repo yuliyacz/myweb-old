@@ -1,32 +1,31 @@
-<section id="home">
-    <div id="myprojects">
+<section id="about">
+    <div class="skills">
+        <h3 class="font-lobster">Znalosti a dovednosti</h3>
         <div>
-            <div class="imgproject text-center veganrest-img" ng-click="myhref('http://vegan-restaurant.herokuapp.com/')">
-                <div><h3 class="font-lobster">Bachelor thesis</h3></div>
+            <div class="technical">
+                <h4>Technické znalosti</h4>
+                <div>
+                    <div ng-repeat="skill in skills" class="skill-block text-lightbrown">
+                        <div class="skillname">{{skill.name}}</div>
+                        <div class="allskills">
+                        <span ng-repeat="skillname in skill.skills">
+                            {{skillname}}
+                        </span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="textproject">
-                Aplikace je realizovaná v jazyce Javascript na základě SPA architektury s použitím Javascriptového frameworku AngularJS. Na straně serveru byli používáné NodeJS a MongoDB databáze.
-            </div>
-        </div>
-        <div>
-            <div class="imgproject text-center sudokugame-img" ng-click="myhref('http://yuliya.cz/sudokugame/')">
-                <div><h3 class="font-lobster">Sudoku game</h3></div>
-            </div>
-            <div class="textproject">
-                Logická hra, vytvořená pomocí programovacího jazyka Javascript a AngularJS.
-            </div>
-        </div>
-        <div>
-            <div class="imgproject text-center crabgame-img" ng-click="myhref('http://yuliya.cz/crabgame/')">
-                <div><h3 class="font-lobster">Crab game</h3></div>
-            </div>
-            <div class="textproject">
-                Jednoduchá hra, která byla vytvořená za použití Javascriptové knihovny k vykreslování 2D grafiky PixiJS.
+            <div class="languages">
+                <h4>Znalost cizích jazyků</h4>
+                <div>
+                    <div ng-repeat="lang in language" class="skill-block text-lightbrown">
+                        <div class="skillname">{{lang.name}}</div>
+                        <div class="allskills">{{lang.text}}</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</section>
-<section id="about">
     <div class="work">
         <h3 class="font-lobster">Pracovní zkušenosti</h3>
         <div class="about_block text-lightbrown">
@@ -69,30 +68,31 @@
             </div>
         </div>
     </div>
-    <div class="skills">
-        <h3 class="font-lobster">Znalosti a dovednosti</h3>
+</section>
+<section id="home">
+    <div id="myprojects">
         <div>
-            <div class="technical">
-                <h4>Technické znalosti</h4>
-                <div>
-                    <div ng-repeat="skill in skills" class="skill-block text-lightbrown">
-                        <div class="skillname">{{skill.name}}</div>
-                        <div class="allskills">
-                        <span ng-repeat="skillname in skill.skills">
-                            {{skillname}}
-                        </span>
-                        </div>
-                    </div>
-                </div>
+            <div class="imgproject text-center veganrest-img" ng-click="myhref('http://vegan-restaurant.herokuapp.com/')">
+                <div><h3 class="font-lobster">Bachelor thesis</h3></div>
             </div>
-            <div class="languages">
-                <h4>Znalost cizích jazyků</h4>
-                <div>
-                    <div ng-repeat="lang in language" class="skill-block text-lightbrown">
-                        <div class="skillname">{{lang.name}}</div>
-                        <div class="allskills">{{lang.text}}</div>
-                    </div>
-                </div>
+            <div class="textproject">
+                Aplikace je realizovaná v jazyce Javascript na základě SPA architektury s použitím Javascriptového frameworku AngularJS. Na straně serveru byli používáné NodeJS a MongoDB databáze.
+            </div>
+        </div>
+        <div>
+            <div class="imgproject text-center sudokugame-img" ng-click="myhref('http://yuliya.cz/sudokugame/')">
+                <div><h3 class="font-lobster">Sudoku game</h3></div>
+            </div>
+            <div class="textproject">
+                Logická hra, vytvořená pomocí programovacího jazyka Javascript a AngularJS.
+            </div>
+        </div>
+        <div>
+            <div class="imgproject text-center crabgame-img" ng-click="myhref('http://yuliya.cz/crabgame/')">
+                <div><h3 class="font-lobster">Crab game</h3></div>
+            </div>
+            <div class="textproject">
+                Jednoduchá hra, která byla vytvořená za použití Javascriptové knihovny k vykreslování 2D grafiky PixiJS.
             </div>
         </div>
     </div>
